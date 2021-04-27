@@ -15,4 +15,8 @@ module "vpc" {
     Terraform = "true"
     Environment = "prod"
   }
+
+  public_subnet_tags = {
+    Tier = "Public"
+  }
 }
